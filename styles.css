@@ -1,3 +1,13 @@
 /* utilities that extend bulma */
+
+/* flex-based positioning utilities */
+/* call on parent element to make child elements 'sit down' on the baseline regardless of height */
 .is-bottom-aligned { display: flex; justify-content: flex-end; flex-direction: column; }
 
+.is-centered       { display: flex; align-items: center; justify-content: center; }
+
+/* spacing utilities */
+.is-padless.       { padding: 0 0 0 0; }
+.is-marginless     { margin: 0 0 0 0; }
+.is-topgapless     { margin-top: 0; padding-top: 0; }
+.is-bottomgapless  { .is-bottomgapless { margin-bottom: 0; padding-bottom: 0; }
