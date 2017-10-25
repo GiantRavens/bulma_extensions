@@ -7,7 +7,7 @@
 .is-centered       { display: flex; align-items: center; justify-content: center; }
 
 /* spacing utilities */
-.is-padless.       { padding: 0 0 0 0; }
+.is-padless       { padding: 0 0 0 0; }
 .is-marginless     { margin: 0 0 0 0; }
 .is-topgapless     { margin-top: 0; padding-top: 0; }
 .is-bottomgapless  { .is-bottomgapless { margin-bottom: 0; padding-bottom: 0; }
