@@ -1,9 +1,12 @@
-/* utilities that extend bulma */
+/* this can be dropped in your rails app in app/assets/stylesheets/application.css.scss */
+
+@import "bulma";
+
+/* giantravens bulma_extensions - utilities that extend bulma */
 
 /* flex-based positioning utilities */
 /* call on parent element to make child elements 'sit down' on the baseline regardless of height */
 .is-bottom-aligned { display: flex; justify-content: flex-end; flex-direction: column; }
-
 .is-centered       { display: flex; align-items: center; justify-content: center; }
 
 /* spacing utilities */
@@ -11,6 +14,20 @@
 .is-marginless    { margin: 0 0 0 0; }
 .is-topgapless    { margin-top: 0; padding-top: 0; }
 .is-bottomgapless { margin-bottom: 0; padding-bottom: 0; }
+.is-focus-padded { padding: 2em; }
 
 /* appearance utilities */
 .is-borderless    { border: 0; }
+
+/* theme customization */
+.footer { background-color: darken(whitesmoke, 35%); padding: 2rem 1.5rem 3rem; }
+.is-danger a { color: white; }
+
+/* rails alert styling */
+/* check giantravens/rails5template for an example of how to use this */
+.alert-success { background-color: #23d160; color: #fff; }
+.alert-error   { background-color: #ffdd57; color: rgba(0, 0, 0, 0.7); }
+.alert-info    { background-color: #209cee; color: #fff; }
+.dismissed     { display: none; }
+.notification  { cursor: pointer; width: 66%; height:33%; margin: auto; width: 66%; height:33%; margin:auto; }
+.is-active     { bottom: 33%; }
